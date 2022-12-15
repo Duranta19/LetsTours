@@ -1,0 +1,16 @@
+Name :aaa
+E-mail :a
+Phone Number :a
+Departure date  :2022-05-24
+Return Date :2022-05-26
+Bus Service Name :GREEN LINE
+From :Dhaka
+To :Sylhet
+Boarding Point :Komlapur
+Boarding Time :09:10 AM
+Number of Tickets :5
+AC/Non AC :AC
+Ticket Price :7000
+Boarding Time :09:10 AM
+Transaction ID :trns347yt802
+

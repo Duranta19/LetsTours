@@ -1,0 +1,8 @@
+Package Name : Sajek Valley Tour Package
+Cost Per Person : 11600
+Name : rifatPavkage
+E-mail : rifat@gmail.com
+Phone Number :22222
+Number of Child and Adult :0 2
+Check in Day :2022-05-23
+Check out Day :2 Days - 3 Nights

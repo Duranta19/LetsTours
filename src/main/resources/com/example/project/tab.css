@@ -1,0 +1,16 @@
+.tab{
+    -fx-pref-width : 220;
+    -fx-pref-height :40;
+    -fx-background-color : #ff8936;
+    -fx-margin : 0px 5px 0px 0px;
+    -fx-background-radius : 15px;
+    -fx-font-size : 16px;
+}
+.bpay{
+    -fx-background-radius : 10px;
+    -fx-background-color : #def3ff;
+}
+.bpay:pressed{
+    -fx-background-radius : 10px;
+    -fx-background-color : #63b1ff;
+}

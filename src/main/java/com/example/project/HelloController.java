@@ -2,14 +2,18 @@ package com.example.project;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class HelloController {
@@ -29,32 +33,62 @@ public class HelloController {
     @FXML
     private TextField username;
 
+//    @FXML
+//    private Label slts;
+
+//    private Stage stage;
+//    private Scene scene;
+//    private Parent root;
+
     @FXML
-    private Label slts;
+    void signup(ActionEvent event) throws IOException {
+        if(event.getSource() == signup){
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SignUp.fxml"));
+            Parent root;
+            root = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        }
+    }
 
     @FXML
     void login(ActionEvent event) {
         if(event.getSource() == login){
             if(logIn() > 0){
-                slts.setText("Login");
+                try {
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("DashBoard.fxml"));
+                    Parent root;
+                    root = fxmlLoader.load();
+                    Stage stage = new Stage();
+                    stage.setScene(new Scene(root));
+                    stage.setTitle("Dashboard");
+                    Image icon = new Image(getClass().getResourceAsStream("dashbord.png"));
+                    stage.getIcons().add(icon);
+                    stage.show();
+                }
+                catch(IOException e){
+                    System.out.println(e.getMessage());
+                }
             }
             else{
-                slts.setText("Try Again");
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Login");
+                alert.setHeaderText("Wrong Username or Password.");
+                alert.setContentText("Enter Correct Username or Password or Signup.");
+                alert.show();
             }
         }
     }
 
-    @FXML
-    void signup(ActionEvent event) {
 
-    }
     private int logIn(){
         int cont = 0;
         String un = username.getText().toString();
         String pss = password.getText().toString();
         ArrayList<Data> list = new ArrayList<Data>();
         try{
-            FileReader fr = new FileReader("E:\\Study\\6th Trimester\\A_OOP\\Project\\src\\main\\resources\\com\\example\\project\\de-tour.txt");
+            FileReader fr = new FileReader("E:\\Study\\6th Trimester\\A_OOP\\Provect_Version4.1[1269] (2)\\Provect_Version4.1[1269]\\Provect_Version4\\Provect_Version3.2\\Project\\src\\main\\resources\\com\\example\\project\\de-tour.txt");
             BufferedReader br = new BufferedReader(fr);
             String st;
             while ((st = br.readLine()) != null){
@@ -87,5 +121,4 @@ public class HelloController {
         }
         return cont;
     }
-
 }

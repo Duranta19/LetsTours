@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.HotelController">
+   <top>
+      <Pane prefHeight="105.0" prefWidth="1008.0" style="-fx-background-color: #94ebd2;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="Homelbl" layoutX="14.0" layoutY="1.0" prefHeight="106.0" prefWidth="328.0" text="Hotel Booking">
+               <graphic>
+                  <ImageView fx:id="HomeImg" fitHeight="71.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@rifat%20er%20hotel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="closeLbl" layoutX="646.0" layoutY="9.0" prefHeight="30.0" prefWidth="33.0" />
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #94ebd2;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="257.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="CoxButton" mnemonicParsing="false" onAction="#Cox" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #2670b5;" text="Cox_Bazar" textFill="#fffefe">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="StButton" mnemonicParsing="false" onAction="#StML" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #2670b5;" text="St. Martin's Island" textFill="#fff9f9">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="Bandarban" mnemonicParsing="false" onAction="#Bandarbanbutt" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #2670b5;" text="Bandarban" textFill="WHITE">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="SmButton" mnemonicParsing="false" onAction="#SM" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #2670b5;" text="Sreemangal" textFill="WHITE">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane fx:id="asholmal" prefHeight="629.0" prefWidth="803.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

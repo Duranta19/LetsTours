@@ -48,7 +48,7 @@
                   <Font name="Arial Black" size="18.0" />
                </font>
             </Button>
-            <Label contentDisplay="CENTER" layoutX="63.0" layoutY="39.0" prefHeight="59.0" prefWidth="181.0" style="-fx-background-color: transparent; -fx-alignment: center; -fx-font-family: Impact;" text="Login" textAlignment="CENTER" textFill="#ff6b00">
+            <Label contentDisplay="CENTER" layoutX="63.0" layoutY="36.0" prefHeight="59.0" prefWidth="181.0" style="-fx-background-color: transparent; -fx-alignment: center; -fx-font-family: Impact;" text="Login" textAlignment="CENTER" textFill="#ff6b00">
                <font>
                   <Font name="System Bold" size="38.0" />
                </font>
@@ -64,10 +64,6 @@
                   <Font name="Arial" size="18.0" />
                </font>
             </Button>
-            <Label fx:id="slts" alignment="CENTER" layoutX="102.0" layoutY="6.0" prefHeight="33.0" prefWidth="103.0" style="-fx-border-color: #fc0303;" text="Log in Status">
-               <font>
-                  <Font size="14.0" />
-               </font></Label>
          </children>
       </AnchorPane>
       <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="1260.0" style="-fx-background-color: #79dbe8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.TravelSuggestion">
+   <children>
+      <ImageView fitHeight="155.0" fitWidth="478.0" layoutX="802.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Placec.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="titelbox" prefHeight="155.0" prefWidth="790.0" style="-fx-background-color: #79dbe8;" text=" Travel Advice" textAlignment="RIGHT" textFill="#030303">
+         <font>
+            <Font name="Colonna MT" size="71.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="selectPlace" layoutX="295.0" layoutY="125.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="183.0" style="-fx-background-color: gray;" text="Select Place" textFill="WHITE">
+        <items>
+            <MenuItem mnemonicParsing="false" onAction="#Bandarban" text="Bandarban" />
+          <MenuItem mnemonicParsing="false" onAction="#coxsBazaar" text="Cox's Bazaar" />
+            <MenuItem mnemonicParsing="false" onAction="#SylhetJaflong" text="Jaflong – Sylhet" />
+            <MenuItem mnemonicParsing="false" onAction="#Ratargul" text="Ratargul Swamp Forest – Sylhet" />
+          <MenuItem mnemonicParsing="false" onAction="#sajek" text="Sajek Valley" />
+            <MenuItem mnemonicParsing="false" onAction="#srimangal" text="Srimangal" />
+            <MenuItem mnemonicParsing="false" onAction="#StMartin" text="St. Martin’s Island" />
+        </items>
+         <font>
+            <Font name="Calisto MT Bold" size="15.0" />
+         </font>
+      </MenuButton>
+      <ImageView fx:id="image2" fitHeight="264.0" fitWidth="294.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="image1" fitHeight="264.0" fitWidth="294.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="description" editable="false" layoutX="294.0" layoutY="157.0" prefHeight="517.0" prefWidth="970.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

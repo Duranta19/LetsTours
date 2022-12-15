@@ -1,0 +1,14 @@
+Name :rifat3
+E-mail :rifat3
+Phone Number :2222
+Departure date  :2022-05-23
+Return Date :2022-05-24
+Train Name :Nilsagor
+From :Feni
+To :Rajshahi
+Boarding Point :Bimanbondor
+Boarding Time :06:40 AM
+Number of Tickets :2
+AC/Non AC :AC_B
+Ticket Price :700Boarding Time :06:40 AM
+Transaction ID :trxid7u239ss28w2

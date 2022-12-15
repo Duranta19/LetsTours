@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="coxmainacor" prefHeight="629.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.CoxhotelController">
+   <children>
+      <ImageView fitHeight="304.0" fitWidth="749.0" layoutX="22.0" layoutY="5.0" pickOnBounds="true">
+         <image>
+            <Image url="@h1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="304.0" fitWidth="749.0" layoutX="22.0" layoutY="319.0" pickOnBounds="true">
+         <image>
+            <Image url="@h2.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="coxinachor" layoutY="5.0" prefHeight="629.0" prefWidth="803.0">
+         <children>
+            <Button fx:id="bookbut1" layoutX="613.0" layoutY="104.0" mnemonicParsing="false" onAction="#bookbut1" prefHeight="34.0" prefWidth="145.0" style="-fx-background-color: #3b71f7;" text="Book Now" />
+            <Button fx:id="bookbut2" layoutX="613.0" layoutY="265.0" mnemonicParsing="false" onAction="#bookbut2" prefHeight="34.0" prefWidth="145.0" style="-fx-background-color: #3b71f7;" text="Book Now" />
+            <Button fx:id="bookbut3" layoutX="613.0" layoutY="426.0" mnemonicParsing="false" onAction="#bookbut3" prefHeight="34.0" prefWidth="145.0" style="-fx-background-color: #3b71f7;" text="Book Now" />
+            <Button fx:id="bookbut4" layoutX="613.0" layoutY="574.0" mnemonicParsing="false" onAction="#bookbut4" prefHeight="34.0" prefWidth="145.0" style="-fx-background-color: #3b71f7;" text="Book Now" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
